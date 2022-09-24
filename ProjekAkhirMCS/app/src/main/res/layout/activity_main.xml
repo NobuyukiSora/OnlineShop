@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/loginbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/inemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="151dp" />
+        <EditText
+            android:id="@+id/inpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="260dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/teal_700"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="230dp" />
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="545dp" />
+
+        <Button
+            android:id="@+id/btnregis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="545dp" />
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/loginfragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

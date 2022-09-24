@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nama"
+                    android:textSize="50dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listbarang_rv"
+                    tools:ignore="MissingConstraints">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RJson"/>
+    </LinearLayout>
+    // Buttom Nav -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnhome"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:textSize="10dp"
+                android:text="home" />
+
+            <Button
+                android:id="@+id/btntransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:textSize="10dp"
+                android:text="transaction" />
+
+            <Button
+                android:id="@+id/btnprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:textSize="10dp"
+                android:text="profile" />
+
+            <Button
+                android:id="@+id/btnabout"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:textSize="10dp"
+                android:text="about" />
+
+        </GridLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
